@@ -1,12 +1,10 @@
 //nav導覽列
-
 $(function () {
     $(".hamburger").click(function () {
         $(this).toggleClass("hamburger-x");
         $("nav ul").slideToggle();
         $("nav").toggleClass("nav-change");
         $("nav li a").toggleClass("a-change");
-        //        $(".logo").toggleClass("logo-change");
         $(".logo svg path").toggleClass("svg-path-change");
     });
 
@@ -24,37 +22,18 @@ $(function () {
             $(".logo svg path").removeClass("svg-path-change");
         }
     });
-
-
-
-    //    var $li = $("#sequence .seq-pagination li:nth-of-type(2)");
-    //    var x = $li.css("background-color");
-    //    var y = "#fff";
-    //    
-    //    if (x == y) {
-    //        $("nav li a").toggleClass("step2-change");
-    //    } else {
-    //        $("nav li a").removeClass("step2-change");
-    //    }
 });
-
-
-
-
-
 
 
 //情境圖Slider
 $(function () {
-    $(".slider").bxSlider({ //要用大括號
-        mode: "horizontal", //'horizontal'水平, 'vertical'垂直, 'fade'淡入淡出
-        speed: 450, //切換畫面時間（毫秒）
-        auto: false, //自動播放
-        //pause: 2000, //畫面停留時間（毫秒），要大於speed的時間才不會有亂象。
+    $(".slider").bxSlider({
+        mode: "horizontal",
+        speed: 450,
+        auto: false,
         easing: "cubic-bezier(.62,0,.05,1)",
     });
 });
-
 
 
 //滑鼠移入圖片時出現圖說連結
@@ -98,7 +77,6 @@ $(function () {
 });
 
 
-
 //視窗寬度小於某值時，抓取.seq-title高度以設定.seq2高度和.seq-next位置
 $(function () {
     var w = $(window).width();
@@ -126,7 +104,6 @@ $(function () {
         }
     });
 });
-
 
 
 //頁首第二張背景圖RWD換圖
