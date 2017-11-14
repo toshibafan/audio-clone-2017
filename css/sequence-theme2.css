@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+/**
+ * Altered from:
+ * 
+ * Theme Name: Modern Slide In
+ * Version: 2.0.0
+ * Theme URL: http://sequencejs.com/themes/modern-slide-in/
+ * 
+ * This theme is powered by Sequence.js 
+ * Author: Ian Lunn : http://ianlunn.co.uk/
+ * Theme License: http://sequencejs.com/licenses/#free-theme
+ * Sequence.js Licenses: http://sequencejs.com/licenses/
+ * Copyright © 2015 Ian Lunn Design Limited unless otherwise stated.
+ */
+
+body,
+html,
+.seq2 {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.seq2 {
+    position: relative;
+    background-color: #1e2a42;
+    /* Dimensions */
+    width: 100%;
+}
+
+.seq2 .seq-preloader {
+    background: #D9D9D9;
+}
+
+.seq2 .seq-screen,
+.seq2 .seq-canvas,
+.seq2 .seq-canvas > * {
+    /* Reset the canvas and steps for more browser consistency */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.seq2 .seq-canvas > * {
+    position: absolute;
+}
+
+.seq2 .seq-canvas {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.seq2 .seq-nav {
+    /* Hide navigation when JS is disabled */
+    display: none;
+}
+
+.seq2.seq-active .seq-nav {
+    /* Show navigation and pagination if JS is enabled */
+    display: block;
+}
+
+.seq2 .seq-nav {
+    /* Styles for next/previous buttons and pagination */
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    pointer-events: none;
+    border: none;
+}
+
+.seq2 .seq-next,
+.seq2 .seq-prev {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    /* Image replacement */
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    /* for Firefox Google Chrome  */
+    outline: none;
+    /* for IE */
+    behavior: expression(this.onFocus=this.blur());
+}
+
+.seq2 .seq-next {
+    background: url("../img/slider/arrow-btn.png") no-repeat 0 -52px;
+}
+
+.seq2 .seq-next:hover {
+    background-position: -52px -52px;
+}
+
+.seq2 .seq-prev {
+    background: url("../img/slider/arrow-btn.png") no-repeat 0 0;
+}
+
+.seq2 .seq-prev:hover {
+    background-position: -52px 0;
+}
+
+.seq2 .seq-model,
+.seq2 .seq-title {
+    position: absolute;
+    overflow: hidden;
+}
+
+.seq2 .seq-title {
+    left: 6%;
+}
+
+.seq2 .seq-model img,
+.seq2 .seq-title > * {
+    display: block;
+    width: 100%;
+    color: #fff;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-properties: transform;
+    transition-properties: transform;
+    -webkit-transition-timing-function: ease-out !important;
+    transition-timing-function: ease-out !important;
+}
+
+.seq2 .a-line {
+    display: inline-block;
+    color: #fff;
+}
+
+.seq2 .a-line-container {
+    float: left;
+}
+
+.seq2 .seq-in .seq-model img,
+.seq2 .seq-in .seq-title > * {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.seq2 .seq-out .seq-model img,
+.seq2 .seq-out .seq-title > * {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+
+@media only screen and (min-width: 320px) {
+    .seq2 .seq-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .seq2 .seq-model img {
+        float: left;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        -webkit-transition-properties: transform;
+        transition-properties: transform;
+    }
+
+    .seq2 .seq-title h2 {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .seq2 .seq-title p {
+        display: block;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .seq2 .seq-in .seq-model img {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .seq2 .seq-out .seq-model img {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .seq2 .seq-title {
+        width: 34%;
+    }
+
+    .seq2 .seq-model {
+        left: 46%;
+        width: 42%;
+    }
+
+    .seq2 .seq-next {
+        left: calc(46% + 15px);
+    }
+
+    .seq2 .seq-prev {
+        left: calc(46% - 67px);
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1529px) {
+    .seq2 .seq-prev {
+        left: calc(54% - 67px);
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1529px) {
+    .seq2 .seq-title {
+        width: 42%;
+    }
+
+    .seq2 .seq-model {
+        left: 54%;
+        width: 46%;
+    }
+    .seq2 .seq-next {
+        left: calc(54% + 15px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #sequence2 h3 {
+        top: 100px;
+    }
+    .seq2 .seq-title {
+        top: 150px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .seq2 .seq-title {
+        top: 130px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #sequence2 h3 {
+        top: 80px;
+    }
+    
+    .seq2 .seq-prev {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .seq2 .seq-model {
+        max-width: 810px;
+    }
+    
+    #sequence2 h3 {
+        left: 6vw;
+    }
+    
+    .seq2 .seq-title {
+        height: 330px;
+    }
+
+    .seq2 .seq-model {
+        top: -35px;
+        height: 550px;
+    }
+
+    .seq2 .seq-model img {
+        height: 100%;
+        width: auto;
+    }
+    
+    .seq2 {
+        height: 480px;
+    }
+    
+    .seq2 .seq-next,
+    .seq2 .seq-prev {
+        top: -26px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    #sequence2 h3 {
+        left: calc(50% - 150px);
+    }
+
+    .seq2 .seq-title {
+        top: calc(61.4vw + 151px);
+        width: 88%;
+        height: auto;
+    }
+
+    .seq2 .seq-model {
+        top: 135px;
+        left: 6%;
+        width: 88%;
+        height: auto;
+    }
+
+    .seq2 .seq-model img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* .seq2高度和.seq-next的top用jQuery設定了*/
+
+    .seq2 .seq-next {
+        left: calc(6% + 15px);
+    }
+}

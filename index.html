@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ This web page is a personal practice by TOSHIBA FAN.
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ All the materials such as pictures, texts, layout are from:
+
+ https://www.bang-olufsen.com/en
+ https://www.beoplay.com
+ https://www.linn.co.uk
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ The animation is based on:
+
+ https://www.sequencejs.com
+ https://bxslider.com
+ -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic - Sequence.js Theme</title>
+    <link rel="stylesheet" href="css/sequence-theme.css" media="all">
+    <link rel="stylesheet" href="css/sequence-theme2.css" media="all">
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu:700" rel="stylesheet">
+</head>
+
+<body>
+    <!---導覽列--->
+    <div class="logo">
+        <a href="javascript:;">
+            <svg version="1.1" x="0px" y="0px"
+	 width="190px" height="18px" viewBox="11.5 0 190 18" enable-background="new 11.5 0 190 18" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M11.5,1.35h4.135c3.172,0,5.36,1.027,5.36,3.85c0,2.102-1.225,3.15-3.15,3.633v0.042
+		c2.079,0.177,3.544,1.532,3.544,3.675c0,3.281-2.713,4.069-5.819,4.069H11.5V1.35z M13.688,14.826h1.641
+		c1.969,0,3.741-0.416,3.741-2.472c0-2.363-2.078-2.691-3.96-2.691h-1.422V14.826z M13.688,7.87h1.203
+		c2.123,0,3.917-0.197,3.917-2.45c0-1.814-1.553-2.275-2.822-2.275h-2.297V7.87z"/>
+	<path fill="#FFFFFF" d="M30.209,1.35h2.297l6.454,15.269h-2.385l-1.553-3.85h-7.482l-1.554,3.85H23.69L30.209,1.35z M31.281,3.406
+		l-3.042,7.57h6.083L31.281,3.406z"/>
+	<path fill="#FFFFFF" d="M42.307,1.35h2.974l6.739,12.294h0.043V1.35h2.188v15.269h-2.801L44.538,4.064h-0.043v12.555h-2.188V1.35z"
+		/>
+	<path fill="#FFFFFF" d="M70.771,4.064c-1.072-0.701-2.231-1.051-4.201-1.051c-3.522,0-5.863,2.56-5.863,5.973
+		c0,3.587,2.582,5.972,5.754,5.972c1.509,0,1.903-0.153,2.45-0.264v-4.638h-3.216V8.262h5.403v7.943
+		c-0.832,0.283-2.275,0.678-4.66,0.678c-4.835,0-8.051-3.107-8.051-7.962c0-4.705,3.413-7.832,8.073-7.832
+		c2.232,0,3.216,0.327,4.485,0.766L70.771,4.064z"/>
+	<path fill="#FFFFFF" d="M109.341,1.086c4.639,0,7.353,3.37,7.353,7.898c0,4.637-2.691,7.897-7.353,7.897
+		c-4.66,0-7.35-3.26-7.35-7.897C101.991,4.458,104.704,1.086,109.341,1.086z M109.341,14.958c3.522,0,5.032-2.932,5.032-5.972
+		c0-3.107-1.662-5.994-5.032-5.973c-3.368-0.021-5.031,2.865-5.031,5.973C104.31,12.026,105.819,14.958,109.341,14.958z"/>
+	<path fill="#FFFFFF" d="M121.048,1.35h2.188v13.344h6.388v1.925h-8.575V1.35z"/>
+	<path fill="#FFFFFF" d="M144.361,10.299c0,4.287-2.165,6.584-5.929,6.584s-5.929-2.297-5.929-6.584V1.35h2.188v8.663
+		c0,2.932,0.919,4.945,3.742,4.945c2.821,0,3.74-2.014,3.74-4.945V1.35h2.188L144.361,10.299L144.361,10.299z"/>
+	<path fill="#FFFFFF" d="M149.641,1.35h8.116v1.925h-5.929v4.463h5.666v1.925h-5.666v6.956h-2.188V1.35z"/>
+	<path fill="#FFFFFF" d="M169.942,3.647c-1.115-0.437-1.728-0.634-2.865-0.634c-1.225,0-2.67,0.438-2.67,2.035
+		c0,2.932,6.564,2.253,6.564,7.284c0,3.261-2.517,4.551-5.578,4.551c-1.073,0-2.123-0.307-3.13-0.635l0.219-2.033
+		c0.744,0.306,2.058,0.743,3.173,0.743c1.247,0,2.998-0.7,2.998-2.495c0-3.412-6.563-2.472-6.563-7.218
+		c0-2.713,2.144-4.156,4.9-4.156c1.007,0,2.21,0.174,3.26,0.546L169.942,3.647z"/>
+	<path fill="#FFFFFF" d="M175.941,1.35h8.555v1.925h-6.366v4.463h5.797v1.925h-5.797v5.031h6.366v1.925h-8.555V1.35L175.941,1.35z"
+		/>
+	<path fill="#FFFFFF" d="M189.555,1.35h2.976l6.737,12.294h0.044V1.35h2.188v15.269h-2.801l-6.913-12.555h-0.043v12.555h-2.188V1.35
+		z"/>
+	<path fill="#FFFFFF" d="M92.96,16.396c0,0-1.729-1.731-2.163-2.163c-0.363,0.352-0.721,0.709-1.398,1.387
+		c-1.341,1.343-4.109,2.063-6.161,0.012c-2.083-2.082-1.292-4.891-0.011-6.171c0.496-0.496,1.089-1.078,1.398-1.389
+		c-0.267-0.287-1.58-1.313-1.58-3.171c0-1.923,1.549-3.812,3.812-3.812c1.655,0,2.584,1.015,2.702,1.132
+		c-0.112,0.111-1.364,1.358-1.54,1.534c-0.168-0.176-0.553-0.48-1.162-0.48c-0.715,0-1.633,0.579-1.633,1.634
+		c0,0.664,0.44,1.105,0.497,1.162c0.729,0.728,5.069,5.084,5.069,5.084l1.546-1.546l1.538,1.546l-1.546,1.537l2.162,2.163
+		L92.96,16.396z M86.163,9.62c0,0-0.646,0.647-1.388,1.389c-0.742,0.741-0.961,2.113,0,3.075c0.961,0.961,2.328,0.747,3.075,0.011
+		c0.748-0.737,1.41-1.41,1.41-1.41L86.163,9.62z"/>
+</g>
+</svg>
+        </a>
+    </div>
+    <nav>
+        <div class="hamburger"><span></span></div>
+        <ul>
+            <li><a href="javascript:;">COLLECTION</a></li>
+            <li><a href="javascript:;">SOLUTIONS</a></li>
+            <li><a href="javascript:;">STORIES</a></li>
+            <li><a href="javascript:;">FIND A SHOP</a></li>
+        </ul>
+    </nav>
+
+    <!---頁首圖片輪播--->
+    <div id="sequence" class="seq">
+        <div class="seq-screen">
+            <ul class="seq-canvas">
+
+                <li class="seq-step1" id="step1">
+                    <div class="seq-content">
+                        <h2 data-seq class="seq-title">
+                            <span>THE MULTIROOM COLLECTION</span> EVERYTHING PLAYS TOGETHER
+                        </h2>
+                        <p data-seq class="seq-subtitle">Stream your music to any room or every room.</p>
+                        <a class="seq-button" href="javascript:;" tabindex="-1">EXPLORE COLLECTION</a>
+                        <div id="background"><img src="img/top/Top-1.jpg" alt="" width="1920" height="1081"></div>
+                    </div>
+                </li>
+
+                <li class="seq-step2" id="step2">
+                    <div class="seq-content">
+                        <h2 data-seq class="seq-title">
+                            <span>BEOLAB 20</span> REFINED, POWERFUL SOUND
+                        </h2>
+                        <p data-seq class="seq-subtitle">A graceful expression of refined, powerful sound, seamlessly merging form and function.</p>
+                        <a class="seq-button" href="javascript:;" tabindex="-1">EXPREIENCE BEOLAB 20</a>
+                        <div id="background"><img src="img/top/Top-2_black.jpg" alt="" width="1920" height="1081"></div>
+                    </div>
+                </li>
+
+                <li class="seq-step3" id="step3">
+                    <div class="seq-content">
+                        <h2 data-seq class="seq-title">
+                            <span>SURROUND SOUND</span> SOUND FOR YOUR SENSES
+                        </h2>
+                        <p data-seq class="seq-subtitle">Bang & Olufsen surround sound, stimulate your senses with perfect waves of sound.</p>
+                        <a class="seq-button" href="javascript:;" tabindex="-1">EXPLORE COLLECTION</a>
+                        <div id="background"><img src="img/top/Top-3.jpg" alt="" width="1920" height="1081"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <ul rel="sequence" class="seq-pagination" role="navigation" aria-label="Pagination">
+            <li><a href="#step1" rel="step1" title="Go to slide 1">Powered by Sequence.js</a></li>
+            <li><a href="#step2" rel="step2" title="Go to slide 2">Create Unique Animated Themes</a></li>
+            <li><a href="#step3" rel="step3" title="Go to slide 3">Rapid Development of Step-Based Animated Applications</a></li>
+        </ul>
+    </div>
+
+    <!---影片列--->
+    <div class="full-width">
+        <div class="clearfix" id="sec-1">
+            <div class="col-40">
+                <div class="video-container">
+                    <iframe id="muteYouTubeVideoPlayer" frameborder="0" allowfullscreen="0" gesture="media" title="Spring/Summer 2017 Collection" width="640" height="360" src="https://www.youtube.com/embed/g7-DxMiygJk?rel=0&controls=0&autoplay=0&showinfo=0&modestbranding=1&playlist=&loop=0&fs=0&cc_load_policty=0&iv_load_policy=3&autohide=1&enablejsapi=1&origin=http%3A%2F%2Fimg.labnol.org&widgetid=1&vq=hd720"></iframe>
+                </div>
+            </div>
+            <div class="col-60 text-section-right">
+                <div>
+                    <div class="text-50">
+                        <h2>Everything sounds better</h2>
+                    </div>
+                    <div class="text-50">
+                        <p>
+                            Bang & Olufsen systems are designed to fit around your life. Play your music the way you want and hear it all in the highest quality.
+                        </p>
+                        <p>
+                            Choose from complete <a class="a-line" href="javascript:;">Music Systems</a> or build, customise and upgrade your own with our range of <a class="a-line" href="javascript:;">Hi-fi Separates</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---情境圖列--->
+    <div class="full-width clearfix" id="sec-2">
+
+        <div class="col-40 text-section-left">
+            <div class="text-50">
+                <h3>Complete Music Systems</h3>
+            </div>
+            <div class="text-50">
+                <p>
+                    Our range of complete systems integrate a host of groundbreaking technologies into a simple and elegant package.
+                </p>
+                <p>
+                    Comprising a single player and speakers, they prove that you don't need lots of boxes to make great sound.
+                </p>
+                <br><br>
+                <a class="a-line" href="javascript:;">See the full range</a>
+            </div>
+        </div>
+
+        <div class="col-60">
+            <ul class="slider">
+                <li>
+                    <div class="page1" style="background-image: url(img/ambiance/Beolab50.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOLAB 50</h5>
+                            <p>High End Floor Loudspeaker</p>
+                        </a>
+                    </figcaption>
+                </li>
+                <li>
+                    <div class="page2" style="background-image: url(img/ambiance/B1_portable.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOSOUND 1 & 2</h5>
+                            <p>Portable Wireless Speaker. Small but Loud</p>
+                        </a>
+                    </figcaption>
+                </li>
+                <li>
+                    <div class="page3" style="background-image: url(img/ambiance/Beolab17.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOLAB 17 & 19</h5>
+                            <p>Wireless sound with timeless design</p>
+                        </a>
+                    </figcaption>
+                </li>
+                <li>
+                    <div class="page4" style="background-image: url(img/ambiance/S3_wireless.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOPLAY S3</h5>
+                            <p>Start with one – add more later</p>
+                        </a>
+                    </figcaption>
+                </li>
+                <li>
+                    <div class="page5" style="background-image: url(img/ambiance/Bosound-shape.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOSOUND SHAPE</h5>
+                            <p>On-Wall-Speaker, unlimited set-up</p>
+                        </a>
+                    </figcaption>
+                </li>
+                <li>
+                    <div class="page6" style="background-image: url(img/ambiance/A6_Sound.jpg)"></div>
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOPLAY A6 </h5>
+                            <p>Music system with spectacular sound</p>
+                        </a>
+                    </figcaption>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!---產品圖列--->
+    <div class="full-width">
+        <div class="clearfix" id="sec-3">
+            <div class="col-40 text-section-left">
+                <div class="text-50">
+                    <h3>Hi-fi Separates</h3>
+                </div>
+                <div class="text-50">
+                    <p>
+                        Our range of hi-fi separates give you the flexibility to build and upgrade your system step by step to the ultimate in performance.
+                    </p>
+                    <p>
+                        Start by adding a Bang & Olufsen network music player and build the system of your dreams.
+                    </p>
+                    <br><br><br>
+                    <div class="a-50">
+                        <a class="a-line" href="javascript:;">Wireless speaker systems</a>
+                        <br><a class="a-line" href="javascript:;">Speakers</a>
+                        <br><a class="a-line" href="javascript:;">Bluetooth speakers</a>
+                    </div>
+                    <div class="a-50">
+                        <a class="a-line" href="javascript:;">TV</a>
+                        <br><a class="a-line" href="javascript:;">Sound systems</a>
+                        <br><a class="a-line" href="javascript:;">Headphones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-35">
+                <div class="pro-1">
+                    <img class="pro-img" src="img/products/Beolit17_05_small_3.jpg" alt="">
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>Beolit 17</h5>
+                            <p>Powerful bluetooth speaker</p>
+                        </a>
+                    </figcaption>
+                </div>
+                <div class="pro-2">
+                    <img class="pro-img" src="img/products/B12_s.jpg" alt="">
+                    <span class="shadow"></span>
+                    <figcaption>
+                        <a href="javascript:;">
+                            <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                            <h5>BEOSOUND 1 & 2</h5>
+                            <p>Flexible wireless speaker</p>
+                        </a>
+                    </figcaption>
+                </div>
+            </div>
+            <div class="col-25 pro-3">
+                <img class="pro-img" src="img/products/A9_02_1200.jpg" alt="">
+                <span class="shadow"></span>
+                <figcaption>
+                    <a href="javascript:;">
+                        <img class="fig-arrow" src="img/slider/fig-arrow.png" alt="">
+                        <h5>BEOPLAY A9</h5>
+                        <p>Modern classic speaker</p>
+                    </a>
+                </figcaption>
+            </div>
+        </div>
+    </div>
+
+    <!---現場體驗列--->
+    <div class="full-width clearfix" id="sec-4">
+        <div class="col-25">
+            <img src="img/bg/imgoperation31350retina.png" alt="">
+        </div>
+        <div class="col-33 text-50">
+            <h2>The B&O Experience</h2>
+            <h4>
+                The only way to fully appreciate how a Bang & Olufsen system can make you feel is to hear one. Sit back, relax and listen to your favourite tracks on our range of systems at a Bang & Olufsen Specialist near you.
+            </h4>
+            <a class="button" href="javascript:;">BOOK A DEMONSTRATION</a>
+        </div>
+        <div class="col-42 text-section-right">
+            <div class="col-50 text-50">
+                <h5>Bespoke Service</h5>
+                <p>
+                    We sell through independent retailers who are fully trained in Bang & Olufsen's product range. Offering friendly advice and a bespoke installation service, you'll be well taken care of.
+                </p>
+                <br>
+                <a class="a-line" href="javascript:;">Find a shop</a>
+            </div>
+            <div class="col-50 text-50">
+                <h5>Music Events</h5>
+                <p>
+                    A Bang & Olufsen event is a great way to enjoy the incredible performance of our music systems in a relaxed atmosphere.
+                </p>
+                <p>
+                    Discover the story of a legendary artist at one of our Bang & Olufsen Lounges or attend an exclusive launch event near you.
+                </p>
+                <br>
+                <a class="a-line" href="javascript:;">Find an event</a>
+            </div>
+        </div>
+    </div>
+
+    <!---思想糧食列--->
+
+    <div id="sequence2" class="seq2 clearfix">
+        <div>
+            <h3>FOOD FOR THOUGHT</h3>
+        </div>
+        <div class="seq-screen">
+            <ul class="seq-canvas">
+                <li class="seq-in">
+                    <div class="seq-model">
+                        <img data-seq src="img/thought/Craft_Matters_Aluminium_s.jpg" alt="" />
+                    </div>
+                    <div class="seq-title">
+                        <h2 data-seq>CRAFT MATTERS: ALUMINIUM</h2>
+                        <p data-seq>B&O PLAY's Craft Matters series, consisting of 4 short videos each focusing upon a single material - aluminium, wood, leather and fabric, celebrates B&O PLAY's dedication to craft, built upon Bang & Olufsen's 90 years of dedication craftmanship without compromise.</p>
+                        <div class="a-line-container">
+                            <a class="a-line" href="javascript:;">Read more</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seq-model">
+                        <img data-seq src="img/thought/Jacob_Jensen_s.jpg" alt="" />
+                    </div>
+                    <div class="seq-title">
+                        <h2 data-seq>DESIGN MATTERS: JACOB JENSEN</h2>
+                        <p data-seq>For close to three decades, pioneering designer Jacob Jensen gave form to Bang & Olufsen's vision, consolidating its reputation as a world leader in sound and design. Find out more about his work, and how his legacy informs contemporary innovation at B&O PLAY.</p>
+                        <div class="a-line-container">
+                            <a class="a-line" href="javascript:;">Read more</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="seq-model">
+                        <img data-seq src="img/thought/DSC3530_s.jpg" alt="" />
+                    </div>
+                    <div class="seq-title">
+                        <h2 data-seq>DESIGN MATTERS: BJARKE INGELS</h2>
+                        <p data-seq>If people are different, then why are all homes the same? Renowned Danish architect and ideologist Bjarke Ingels invites us inside his private home, and shares his thoughts on architecture, technology and Bang & Olufsen.</p>
+                        <div class="a-line-container">
+                            <a class="a-line" href="javascript:;">Read more</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+            <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
+            <button type="button" class="seq-next" aria-label="Next">Next</button>
+        </fieldset>
+    </div>
+
+    <!---表單列--->
+    <div class="full-width clearfix" id="sec-6">
+        <div class="col-60">
+            <h3>
+                GET THE LATEST FROM B&O, DIRECT TO YOUR INBOX
+            </h3>
+            <p>
+                Subscribe to find out about new B&O products, music, offers and exclusive events in your area.
+            </p>
+            <br>
+            <form action="">
+                <p>Email Address</p>
+                <input type="email" placeholder="Your email address" maxlength="40">
+                <input type="submit" value="SIGN UP" class="button">
+            </form>
+        </div>
+        <div class="col-40">
+           <div>
+               <p>
+                This web page is a personal practice.
+                <br>The information about the brand or products is not correct.
+                <br><span class="chinese">此網頁僅為個人練習作品。網頁中的品牌或產品訊息並非正確的。</span>
+               </p>
+           </div>
+           <div>
+               <p>
+                All the materials such as pictures, texts, layout are from:
+                <br><span class="chinese">照片、文案、排版等素材皆來自以下網站：</span>
+                <br>
+                <br><a class="a-line" href="https://www.bang-olufsen.com/en" target="_blank">www.bang-olufsen.com/en</a>
+                <br><a class="a-line" href="https://www.beoplay.com" target="_blank">www.beoplay.com</a>
+                <br><a class="a-line" href="https://www.linn.co.uk" target="_blank">www.linn.co.uk</a>
+               </p>
+           </div>
+           <div>
+               <p>
+                The slideshows are based on:
+                <br><span class="chinese">圖片輪播使用以下套件製成：</span>
+               <br>
+                <br><a class="a-line" href="https://www.sequencejs.com" target="_blank">www.sequencejs.com</a>
+                <br><a class="a-line" href="https://bxslider.com" target="_blank">bxslider.com</a>
+               </p>
+           </div>
+        </div>
+    </div>
+
+
+
+    <!---script--->
+    <script src="scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="scripts/hammer.min.js"></script>
+    <script src="scripts/sequence.min.js"></script>
+    <script src="scripts/sequence-theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!--    <script src="https://use.fontawesome.com/39fd5f6753.js"></script>-->
+
+
+
+
+</body>
+
+</html>
