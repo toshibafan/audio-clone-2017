@@ -88,7 +88,9 @@ a {
 }
 
 #sec-1 .a-line::before,
-#sec-1 .a-line-hover::after {
+#sec-1 .a-line-hover::after,
+#sec-6 .a-line::before,
+#sec-6 .a-line-hover::after {
     bottom: 3px;
 }
 
